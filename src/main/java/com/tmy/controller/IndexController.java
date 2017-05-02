@@ -1,5 +1,7 @@
 package com.tmy.controller;
 
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,14 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping("/")
+    @RequestMapping
     public String test() {
         return "test";
     }
-
-    @RequestMapping("/hello")
-    public String hello() {
-        return "hello";
-    }
-
 }
