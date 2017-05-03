@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping
-    public String test() {
-        return "test";
+    @RequestMapping("/")
+    public Person test() {
+        return new Person("lance", 23);
     }
 }
